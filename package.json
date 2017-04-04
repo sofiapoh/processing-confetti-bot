@@ -1,0 +1,17 @@
+{
+  "name": "ConfettiBot",
+  "version": "1.0.0",
+  "description": "Twitter bot that makes you confetti",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Sofia Pohjalainen",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.4"
+  },
+  "devDependencies": {
+    "env2": "^2.1.1"
+  }
+}
