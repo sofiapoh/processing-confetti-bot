@@ -3,15 +3,16 @@ const Twit = require('twit');
 const exec = require('child_process').exec;
 const fs = require('fs');
 const T = new Twit(config);
+const path = require('path');
 
 exports.tweetConfetti = (content) => {
 
-  const cmd = 'open -a create_confetti.app';
+  const cmd = './src/process/create-confetti/create_confetti';
 
   exec(cmd, makeConfetti);
 
   function makeConfetti() {
-    const filename = './src/process/confetti.gif';
+    const filename = '/home/ubuntu/confetti.gif';
     const params = {
       encoding: 'base64',
     };

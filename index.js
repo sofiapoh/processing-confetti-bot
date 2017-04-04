@@ -14,7 +14,7 @@ const onMention = (reply) => {
   const fromUser = reply.user.screen_name;
 
   if (replyTo === 'confetti_bot') {
-    const tweetContent = `Hey @${fromUser}, here is some confetti`;
+    const tweetContent = `Hey @${fromUser}, have some confetti! ✨`;
 
     tweet.tweetConfetti(tweetContent);
   }
