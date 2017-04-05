@@ -13,7 +13,9 @@ const onMention = (reply) => {
   const text = reply.text;
   const fromUser = reply.user.screen_name;
 
-  if (replyTo === 'confetti_bot') {
+  const regex = /@confetti_bot/g;
+
+  if (replyTo === 'confetti_bot' || regex.test(text.toLowerCase())) {
     const tweetContent = `Hey @${fromUser}, have some confetti! ✨`;
 
     tweet.tweetConfetti(tweetContent);
